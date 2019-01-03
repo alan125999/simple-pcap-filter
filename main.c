@@ -83,7 +83,7 @@ int main(int argc, char *argv[]) {
     if(pcap_compile(handle, &fp, bpf_syntax, 1, PCAP_NETMASK_UNKNOWN) == -1) {
         fprintf(stderr, "Cannot compile BPF: %s\n", pcap_geterr(handle));
         pcap_close(handle);
-        exit(1);
+        exit(EXIT_FAILURE);
     }
     
     // Apply the compiled filter
