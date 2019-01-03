@@ -7,7 +7,7 @@ make
 ```
 
 ## Usage
-``` bash
+```
 filter <file.pcap> [BPF Syntax]
 ```
 
